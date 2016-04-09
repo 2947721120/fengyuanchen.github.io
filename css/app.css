@@ -1,0 +1,120 @@
+/* Basic style
+ * -------------------------------------------------------------------------- */
+
+body {
+  background-color: #fcfcfc;
+}
+
+.browserupgrade,
+.skiplink {
+  display: block;
+  margin-bottom: 0;
+  padding: .5em 1em;
+  text-align: center;
+}
+
+.container {
+  max-width: 640px;
+}
+
+
+/* Header */
+
+.header {
+  margin-bottom: 1.5em;
+  line-height: 2.5em;
+  background-color: #fff;
+}
+
+
+/* Content */
+
+.process {
+  padding-top: 10em;
+  padding-bottom: 10em;
+  background-color: transparent;
+  color: #999;
+  text-align: center;
+}
+
+.repo-name,
+.repo-name:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.repo-star {
+  font-size: 14px;
+  color: #666;
+}
+
+.repo-text {
+  color: #999;
+}
+
+
+/* Footer */
+
+.footer,
+.footer a {
+  font-size: 14px;
+  color: #999;
+}
+
+
+/* Carbon Ads
+ * -------------------------------------------------------------------------- */
+
+.carbonads {
+  overflow: hidden;
+}
+
+.carbon-img {
+  clear: left;
+  float: left;
+  display: block;
+}
+
+.carbon-text,
+.carbon-poweredby {
+  display: block;
+  margin-left: 140px;
+}
+
+.carbon-text:hover,
+.carbon-text:focus,
+.carbon-poweredby:hover,
+.carbon-poweredby:focus {
+  text-decoration: none;
+}
+
+.carbon-text {
+  margin-bottom: .5em;
+  font-size: 14px;
+}
+
+.carbon-poweredby {
+  color: #999;
+  font-size: 12px;
+}
+
+@media (min-width: 992px) {
+  .carbonads {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+
+    max-width: 162px;
+    margin-bottom: 0;
+  }
+
+  .carbon-img {
+    float: none;
+    margin-bottom: .5em;
+  }
+
+  .carbon-text,
+  .carbon-poweredby {
+    margin-left: 0;
+  }
+}

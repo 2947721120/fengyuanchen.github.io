@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Fengyuan Chen
+
+# THANKS
+
+    Github Pages, Google Analytics
+
+# TECHNOLOGY COLOPHON
+
+    HTML, CSS, JavaScript
+    Simple UI, Font Awesome, Vue.js
+

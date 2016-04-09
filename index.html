@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A series of open source projects of Chen Fengyuan">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, front-end, open source, projects, Chen Fengyuan, chenfengyuan, Fengyuan Chen, fengyuanchen, web designer, web developer">
+    <meta name="author" content="Chen Fengyuan">
+    <title>Projects</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://cdn.rawgit.com/fengyuanchen/simpleui/v0.1.1/dist/simple.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <a class="visuallyhidden focusable skiplink" href="#content">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="grid">
+          <div class="cell">
+            <nav class="nav nav-inline">
+              <a class="nav-link" href="./">Projects</a>
+            </nav>
+          </div>
+          <div class="cell float-right">
+            <nav class="nav nav-inline nav-lined">
+              <a class="nav-link" href="https://github.com/fengyuanchen" title="View projects on GitHub">GitHub</a>
+              <a class="nav-link" href="http://chenfengyuan.com">About</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main class="content" id="content">
+      <div class="container">
+        <div class="card carbonads">
+          <script id="_carbonads_js" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=fengyuanchen" async></script>
+        </div>
+        <div class="card process" v-if="loading"><i class="fa fa-spinner fa-pulse"></i> Loading...</div>
+        <template v-else>
+          <div class="repos">
+            <div class="card" v-for="repo in repos">
+              <h5>
+                <a class="repo-name" href="{{ repo.html_url }}">{{ repo.name }}</a>
+                <small class="repo-star float-right">
+                  <i class="fa fa-star"></i>
+                  {{ repo.stargazers_count }}
+                </small>
+              </h5>
+              <p class="repo-text">{{ repo.description }}</p>
+              <a class="card-link" href="{{ repo.html_url }}" title="View repository"><i class="fa fa-github"></i> GitHub</a>
+              <a class="card-link" href="{{ repo.homepage }}" title="View homepage"><i class="fa fa-home"></i> Website</a>
+            </div>
+          </div>
+        </template>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="float-left">&copy; 2016 <a href="http://chenfengyuan.com">Chen Fengyuan</a></p>
+        <ul class="inline float-right">
+          <li>
+            <a href="https://github.com/fengyuanchen">
+              <i class="fa fa-github"></i>
+              <span class="visuallyhidden">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/fengyuanchen">
+            <i class="fa fa-twitter"></i>
+            <span class="visuallyhidden">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/fengyuanchan">
+            <i class="fa fa-facebook"></i>
+            <span class="visuallyhidden">Facebook</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.17/vue.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
